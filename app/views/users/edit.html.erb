@@ -6,8 +6,8 @@
   <title>Edit view</title>
 </head>
 <body>
-<h1> Update an Existing User</h1>
-<%= form_for @user, url: {action: "edit"}, html: {class: "nifty_form"} do |f| %>
+<h1>Edit view</h1>
+<%= form_for @user do |f| %>
 	<%= label_tag(:username, "Username:") %>
   <%= f.text_field :username %>
 
@@ -17,7 +17,13 @@
   <%= f.label :password, "password" %>
   <%= f.password_field (:password) %>
 
-  <%= f.submit "Update" %>
+  <%= f.submit "Update" %> 
+  
+  <% @user.errors.full_messages.each do |error| %>
+ <%= error %>
 <% end %>
+
+<% end %>
+  
 </body>
 </html>
