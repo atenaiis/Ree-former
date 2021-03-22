@@ -1,24 +1,67 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, is to build a form the old fashioned way and then the Rails way.
 
-Things you may want to cover:
+![screenshot](./app/assets/images/user.png)
+![screenshot](./app/assets/images/new.png)
+![screenshot](./app/assets/images/edit.png)
 
-* Ruby version
+## Built With
 
-* System dependencies
+* Ruby 2.7.2
+* Ruby on Rails 6.1.1
 
-* Configuration
 
-* Database creation
+## Setup
 
-* Database initialization
+- To run it in your local machine you need to follow these steps.
 
-* How to run the test suite
+ - Clone repository repository with this command on terminal
+  git clone git@github.com:atenaiis/Ree-former.git
 
-* Services (job queues, cache servers, search engines, etc.)
+## Run
+ - Once you are in your local directory, open your console and run:
 
-* Deployment instructions
+ - bundle install
 
-* ...
+ - rails db:migrate
+
+ - rails server
+
+## You can use the general commands to create objects or get them.
+
+To set up the server.
+
+After this you can open your favorite web-browser and copy paste the next:
+
+http://localhost:3000/users/new
+
+Play with the form and create a new user, then copy and paste the next:
+
+http://localhost:3000/users/1/edit
+
+
+
+## Authors
+
+
+👤 **Author1**
+
+- Github: [@atenaiis](https://github.com/atenaiis)
+- Twitter: [@spranomarian](https://twitter.com/SopranoMarian)
+- Linkedin: [linkedin](https://www.linkedin.com/in/mariana-atenai-campos-garcia-a30791143/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
