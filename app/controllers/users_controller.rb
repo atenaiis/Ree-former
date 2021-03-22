@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class UsersController < ApplicationController
+class UsersController < ApplicationController # rubocop:todo Style/Documentation
   def new
     @user = User.new
   end
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       flash[:error] = 'oh oh! something went wrong'
       render :new
     end
-    end
+  end
 
   def edit
     @user = User.find(params[:id])
@@ -32,9 +32,9 @@ class UsersController < ApplicationController
     end
   end
 
-      private
+  private
 
   def user_params
     params.require(:user).permit(:username, :email, :password)
   end
-    end
+end
