@@ -13,10 +13,10 @@
 -->
 <%= form_with model: @user, class: "class_style" do |f| %>
 	<%= label_tag(:username, "Username:") %>
-  <%= f.text_field :username, placeholder: "Name here" %>
+  <%= f.text_field :username, placeholder: "Your user name here" %>
 
   <%= label_tag(:email, "Email:")%>
-  <%= f.email_field :email, placeholder: "example@gmail.com"%>
+  <%= f.email_field :email, placeholder: "example@example.com"%>
 
   <%= f.label :password, "password" %>
   <%= f.password_field (:password) %>
