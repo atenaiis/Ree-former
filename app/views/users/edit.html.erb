@@ -1,14 +1,23 @@
-
-h1> Edit a Existing User</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit view</title>
+</head>
+<body>
+<h1> Update an Existing User</h1>
 <%= form_for @user, url: {action: "edit"}, html: {class: "nifty_form"} do |f| %>
 	<%= label_tag(:username, "Username:") %>
-  <%= f.text_field :username, placeholder: "Your user name here" %>
+  <%= f.text_field :username %>
 
   <%= label_tag(:email, "Email:")%>
-  <%= f.email_field :email, placeholder: "example@example.com"%>
+  <%= f.email_field :email %>
 
   <%= f.label :password, "password" %>
   <%= f.password_field (:password) %>
 
-  <%= f.submit "Create" %>
+  <%= f.submit "Update" %>
 <% end %>
+</body>
+</html>
