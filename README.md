@@ -23,7 +23,7 @@ In this project, is to build a form the old fashioned way and then the Rails way
  - Once you are in your local directory, open your console and run:
 
  - bundle install
-
+ - rails db:create 
  - rails db:migrate
 
  - rails server
